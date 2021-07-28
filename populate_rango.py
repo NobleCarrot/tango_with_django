@@ -61,14 +61,18 @@ def add_cat(name):
     if c == 'Python':
         c.likes = 64
         c.views = 128
+        c.save()
+        return c
     elif c == 'Django':
         c.likes = 32
         c.views = 64
-    elif c == 'Other Frameworks':
-        c.views=32
-        c.likes=16
-    c.save()
-    return c
+        c.save()
+        return c
+    else:
+        c.views = 32
+        c.likes = 16
+        c.save()
+        return c
 
 if __name__ == '__main__':
     print('Starting Rango population script...')
