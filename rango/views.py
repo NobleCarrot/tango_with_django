@@ -5,12 +5,7 @@ from rango.forms import UserForm, UserProfileForm
 # Create your views here.
 from django.shortcuts import render
 from rango.forms import CategoryForm
-from django.shortcuts import redirect
 from rango.forms import PageForm
-from django.shortcuts import redirect
-from django.urls import reverse
-
-from django.http import HttpResponse
 from rango.models import Category
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
